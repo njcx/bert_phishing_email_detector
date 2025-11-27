@@ -10,7 +10,7 @@ from tqdm import tqdm
 class PhishingEmailDataset(Dataset):
     """钓鱼邮件数据集"""
 
-    def __init__(self, data, tokenizer, max_length=256):
+    def __init__(self, data, tokenizer, max_length=512):
         self.data = data
         self.tokenizer = tokenizer
         self.max_length = max_length
@@ -204,9 +204,9 @@ def main():
 
     # 参数设置
     MODEL_NAME = './chinese-bert-wwm-ext'
-    MAX_LENGTH = 512  # 邮件可能较长，增加到256
+    MAX_LENGTH = 512  # 邮件可能较长，增加到512
     BATCH_SIZE = 18  # 根据内存调整
-    EPOCHS = 1
+    EPOCHS = 5
     LEARNING_RATE = 2e-5
     GRADIENT_ACCUMULATION_STEPS = 2
 
@@ -355,7 +355,7 @@ def predict_email(title, body, attachment_name=None, model_path='./phishing_emai
     encoding = tokenizer(
         text,
         add_special_tokens=True,
-        max_length=256,
+        max_length=512,
         padding='max_length',
         truncation=True,
         return_attention_mask=True,
@@ -404,7 +404,24 @@ if __name__ == "__main__":
             'title': '【紧急】您的账户存在异常',
             'body': '您的银行账户检测到异常登录，请立即点击链接验证身份，否则将冻结账户。',
             'attachment': 'security_verify.exe'
+        },
+
+        {
+            "title": "日常通知",
+            "body": "今天下午茶歇取消。",
+            "attachment": None
+        },
+        {
+            "title": "",
+            "body": "",
+            "attachment": None
+        },
+        {
+            "title": "账户异常！",
+            "body": "点击 http://fake-bank.com 验证",
+            "attachment": "verify.exe"
         }
+
     ]
 
     for case in test_cases:
