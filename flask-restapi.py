@@ -24,8 +24,8 @@ device = None
 
 # 配置
 MODEL_PATH = './phishing_email_detector'
-MAX_LENGTH = 256
-CONFIDENCE_THRESHOLD = 0.5
+MAX_LENGTH = 512
+CONFIDENCE_THRESHOLD = 0.7
 API_KEY = ["H8jR4nPqW6sYtVcE", "T7gFpN3mKx9LcVbQ", "R2vZqW8nJk4PmSxH"]
 
 
