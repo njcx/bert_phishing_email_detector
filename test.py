@@ -92,11 +92,6 @@ phishing_emails = [
         'attachment': 'security_verify.exe'
     },
     {
-        'title': '建设银行电子密码器升级',
-        'body': '您的电子密码器需要升级，请下载附件进行升级，否则将无法使用网银。',
-        'attachment': 'ccb_password_upgrade.exe'
-    },
-    {
         'title': '中国银行：您的账户已被锁定',
         'body': '系统检测到您的账户存在风险，已被临时锁定。请立即访问 http://boc-unlock.net 解锁。',
         'attachment': None
@@ -108,11 +103,7 @@ phishing_emails = [
         'body': '您的订单出现异常，商品无法发货。请联系客服QQ：123456789 或点击链接处理：http://taobao-help.cc',
         'attachment': 'order_problem.html'
     },
-    {
-        'title': '京东金融：您有一笔待确认退款',
-        'body': '您有一笔退款需要确认，请下载附件填写退款信息。',
-        'attachment': 'refund_form.doc'
-    },
+
     {
         'title': '拼多多中奖通知',
         'body': '恭喜您中奖了！奖金10000元，请点击领取：http://pdd-prize.top 需要提供银行卡信息。',
@@ -138,22 +129,11 @@ phishing_emails = [
         'attachment': 'tax_refund_guide.pdf'
     },
     {
-        'title': '公安部：您的身份信息被盗用',
-        'body': '经核查，您的身份证信息被用于违法活动。请立即配合调查，联系QQ：987654321',
-        'attachment': None
-    },
-    {
         'title': '社保中心：补缴通知',
         'body': '您有社保欠费需补缴，请点击链接查看详情并缴费：http://social-security.org.cn',
         'attachment': 'payment_notice.doc'
     },
 
-    # 企业类钓鱼
-    {
-        'title': '【HR部门】工资单核对',
-        'body': '请核对本月工资单，如有问题请及时反馈。附件需密码打开，密码：123456',
-        'attachment': 'salary_statement.zip'
-    },
     {
         'title': '【IT部门】系统密码重置',
         'body': '系统升级要求所有员工重置密码，请访问：http://company-reset.com 完成重置。',
@@ -166,11 +146,7 @@ phishing_emails = [
         'body': '您的快递因地址不详无法投递，请点击链接更新地址：http://sf-express.cc 并支付5元重新配送费。',
         'attachment': None
     },
-    {
-        'title': 'EMS：包裹清关通知',
-        'body': '您的国际包裹需要缴纳关税200元，请下载附件查看详情并支付。',
-        'attachment': 'customs_clearance.exe'
-    },
+
 ]
 
 

@@ -206,7 +206,7 @@ def main():
     MODEL_NAME = './chinese-bert-wwm-ext'
     MAX_LENGTH = 512  # 邮件可能较长，增加到512
     BATCH_SIZE = 18  # 根据内存调整
-    EPOCHS = 1
+    EPOCHS = 5
     LEARNING_RATE = 2e-5
     GRADIENT_ACCUMULATION_STEPS = 2
 
