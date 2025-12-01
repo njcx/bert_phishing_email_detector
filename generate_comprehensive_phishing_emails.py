@@ -568,7 +568,7 @@ def main():
     
     with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(['subject', 'body', 'attachment', 'tag'])
+        writer.writerow(['title', 'body', 'attachment_name', 'tag'])
         writer.writerows(emails_data)
     
     print(f"全面钓鱼邮件数据生成完成！")
