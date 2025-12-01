@@ -1,5 +1,6 @@
 import csv
 
+
 def merge_csv_files(file1, file2, output_file):
     with open(file1, 'r', newline='', encoding='utf-8') as f1, \
          open(file2, 'r', newline='', encoding='utf-8') as f2, \

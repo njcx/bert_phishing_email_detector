@@ -8,7 +8,7 @@
 import csv
 import random
 import string
-from datetime import datetime, timedelta
+
 
 class ComprehensivePhishingEmailGenerator:
     def __init__(self):
@@ -576,6 +576,7 @@ def main():
     print(f"总共生成：{len(emails_data)} 条邮件数据")
     print("标签设置：1（表示钓鱼邮件）")
     print("包含20种钓鱼邮件场景类型")
+
 
 if __name__ == "__main__":
     main()
